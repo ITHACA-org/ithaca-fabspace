@@ -20,9 +20,11 @@ body {
   font-size: $font-size-base;
   padding-top: 54px;
 }
+
 a {
   color: $brand-primary;
 }
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: $headings-font-weight;
 }
@@ -107,15 +109,16 @@ article.tab-pane {
 /* ------ Nav
 ------------------------------ */
 .navbar-inverse {
-	background-color: $gray-darker;
-	border: 0;
+	background-color: white;
+  border-bottom: 1px solid $gray-darker;
 	.navbar-nav > li > a {
-		color: white;
+		color: $text-color;
 		font-weight: 600;
 		padding-top: 22px;
 		padding-bottom: 18px;
 		&:hover {
 			background-color: $brand-primary;
+      color: white;
 		}
   }
 }
@@ -144,8 +147,8 @@ article.tab-pane {
 	.search {
 		left: 15px;
 		position: relative;
-		color: #444;
-		top: 20px;
+		color: $gray-dark;
+		top: 15px;
 		margin-right: 25px;
 		.fa-search {
 			position: absolute;
@@ -183,9 +186,8 @@ article.tab-pane {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
+  margin-top: 5px;
 	text-indent: -9999px;
-	height: 65px;
-	width: 200px;
 }
 .navbar-collapse {
     max-height: none
@@ -204,7 +206,7 @@ article.tab-pane {
 ------------------------------ */
 .home {
 	.navbar-inverse {
-		background-color: rgba(0,0,0,0.5);
+    background: white;
 	}
 	#wrap {
 	  margin-top: -60px;
